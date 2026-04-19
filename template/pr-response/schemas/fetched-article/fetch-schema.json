@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Article Fetch Data",
+  "description": "Schema for fetched article data including metadata, content, analysis, and reactions",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the article exactly as it appeared"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Subtitle or subheading, if any"
+    },
+    "pub_name": {
+      "type": "string",
+      "description": "The name of the publication or website",
+      "examples": ["The Economist", "New York Times"]
+    },
+    "article_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL of the article"
+    },
+    "main_author_name": {
+      "type": "string",
+      "description": "Name of the author"
+    },
+    "coauthor_1": {
+      "type": "string",
+      "description": "Name of the first coauthor. Leave blank if one author"
+    },
+    "main_author_title": {
+      "type": "string",
+      "description": "Provided title for the main author",
+      "examples": ["Head Of Regional News"]
+    },
+    "main_author_bio_provided": {
+      "type": "string",
+      "description": "Provided biography of the main author (that appeared on the website)"
+    },
+    "main_author_bio_enriched": {
+      "type": "string",
+      "description": "A short biography for the main author"
+    },
+    "main_author_ai_summary": {
+      "type": "string",
+      "description": "AI-generated short summary of the journalist or author's background, expertise, and notable work"
+    },
+    "author_previous_commentary": {
+      "type": "string",
+      "description": "Has the author written about this theme previously? If so, what viewpoints has the author articulated about this subject? Note: Only applicable if author is not the subject of the media monitoring"
+    },
+    "pub_summary": {
+      "type": "string",
+      "description": "A short one sentence summary of the publication",
+      "examples": ["Widely read international business periodical with an estimated daily circ of 200M, published in print and digital"]
+    },
+    "pub_leaning": {
+      "type": "string",
+      "description": "A short description of the publication's general editorial bias or leaning",
+      "examples": ["Leans center right; associated with Republican Party"]
+    },
+    "full_text": {
+      "type": "string",
+      "description": "The full text of the article with all non-text elements removed. Omit captions"
+    },
+    "article_word_count": {
+      "type": "integer",
+      "description": "The computed word count of the full text",
+      "minimum": 0
+    },
+    "claude_summary": {
+      "type": "string",
+      "description": "A one paragraph summary outlining the main argument of the article"
+    },
+    "is_coverage": {
+      "type": "boolean",
+      "description": "Is this third party coverage of the subject of the media monitoring?"
+    },
+    "is_oped": {
+      "type": "boolean",
+      "description": "Is this an opinion piece written by the subject of the media monitoring such as an op ed or contributed content?"
+    },
+    "by_subject": {
+      "type": "boolean",
+      "description": "Was this article written by the subject of the media monitoring? Derives subject identity from CLAUDE.md context"
+    },
+    "has_comments": {
+      "type": "boolean",
+      "description": "Did you see a comments section?"
+    },
+    "comment_summary": {
+      "type": "string",
+      "description": "A summary of the reaction to the article in the comments section focusing on recurrent reader responses"
+    },
+    "comments_supportive": {
+      "type": "integer",
+      "description": "On a scale of 1 to 10, how supportive would you rank the comments section as being of the author's thesis",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "comment_count": {
+      "type": "integer",
+      "description": "The identified comments count, if available",
+      "minimum": 0
+    },
+    "keywords": {
+      "type": "array",
+      "description": "5 tags for the article capturing recurring points",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "display_summary": {
+      "type": "string",
+      "description": "A displayable summary of the coverage following a specific format including publication, date, author, main arguments, comments reaction, and word count"
+    }
+  },
+  "required": [
+    "title",
+    "pub_name",
+    "article_url",
+    "full_text",
+    "article_word_count",
+    "claude_summary",
+    "is_coverage",
+    "is_oped",
+    "by_subject",
+    "has_comments",
+    "keywords",
+    "display_summary"
+  ]
+}

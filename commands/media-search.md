@@ -1,0 +1,1 @@
+Search the article archive by keyword, publication, date range, or author. Provide search criteria and I'll find matching articles and present them with relevant metadata. Results can be displayed as a list, table, or exported to a file.

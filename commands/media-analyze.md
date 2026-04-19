@@ -1,0 +1,1 @@
+Analyze the article archive and generate comprehensive reports including statistics, trends, publication patterns, topic analysis, and insights. You can specify a time period, publication, or topic to focus the analysis, or I'll analyze the entire collection by default.

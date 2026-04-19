@@ -1,0 +1,12 @@
+{
+  "name": "pr-media-work",
+  "version": "1.0.0",
+  "description": "PR and media monitoring primitives for work contexts — scan coverage, summarize press, draft responses, and build comms strategy. Ships monitoring, PR-response, and comms-strategy scaffolds plus a provisioning skill.",
+  "author": {
+    "name": "Daniel Rosehill",
+    "url": "https://github.com/danielrosehill"
+  },
+  "repository": "https://github.com/danielrosehill/pr-media-work-plugin",
+  "license": "MIT",
+  "keywords": ["pr", "media-monitoring", "comms", "press", "public-relations", "coverage"]
+}

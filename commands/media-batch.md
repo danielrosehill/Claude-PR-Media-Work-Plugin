@@ -1,0 +1,1 @@
+Batch process multiple article URLs at once. Provide a list of URLs (comma or newline separated) and I'll systematically fetch and save each article to the repository following the proper organizational structure and naming conventions. I'll provide progress updates and a summary report when complete.

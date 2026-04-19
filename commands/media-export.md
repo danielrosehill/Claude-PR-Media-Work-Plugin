@@ -1,0 +1,1 @@
+Export articles in various formats for analysis or integration with other tools. Choose from CSV, JSON, or structured markdown. You can export the full collection or filter by date, publication, or topic. I'll generate the export file and save it to the /exports/ directory.

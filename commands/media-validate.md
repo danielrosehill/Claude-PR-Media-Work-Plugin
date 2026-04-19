@@ -1,0 +1,1 @@
+Validate existing articles against the repository's naming conventions and JSON schema requirements. I'll check file naming, directory structure, schema compliance, and metadata completeness, then generate a detailed report of any issues found with suggested fixes.

@@ -1,0 +1,1 @@
+Show quick statistics about the article collection including total count, date range, number of publications, total word count, most frequent keywords, and article distribution by publication and time period.

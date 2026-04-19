@@ -1,0 +1,1 @@
+Research and create a comprehensive profile for a publication including editorial bias, circulation data, credibility indicators, and metadata for article enrichment. Provide the publication name or URL and I'll research it thoroughly, then save the profile to the publication-profiles database.
